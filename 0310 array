@@ -1,0 +1,109 @@
+//주석 달기// var name = '최유미';
+var name = prompt('이름을 입력해 주세요.');
+
+var msg = "당신의 이름은" + name + "입니다." +name.lealert(msg)
+
+
+//console
+   var arr = [];
+=> undefined
+    var arr2 = [1, 2, 3, 4, 5];
+=> undefined
+   arr2;
+=> [ 1, 2, 3, 4, 5 ]
+   var mixed_arr = [1, true, 3.14,"str",{name:"object"},[1,2,3]];
+=> undefined
+   mixed_arr; 
+.. 
+=> [ 1, true, 3.14, 'str', { name: 'object' }, [ 1, 2, 3 ] ]
+   max_arr.length;
+ReferenceError: max_arr is not defined
+    at eval:1:1
+    at eval
+    at o.<anonymous>
+   mixed_arr.length;
+=> 6
+   arr2.length;
+=> 5
+   arr.length;
+=> 0
+   arr2[0];
+=> 1
+   arr2[3];
+=> 4
+   arr2[7];
+=> undefined
+   var arr = [1,2,3,4,5];
+=> undefined
+   arr.pop();
+=> 5
+   arr;
+=> [ 1, 2, 3, 4 ]
+   arr.shift();
+=> 1
+   arr;
+=> [ 2, 3, 4 ]
+   arr.push(6);
+=> 4
+   arr;
+=> [ 2, 3, 4, 6 ]
+   array.unshift(0);
+ReferenceError: array is not defined
+    at eval:1:1
+    at eval
+    at o.<anonymous>
+   array.unshift(0);
+ReferenceError: array is not defined
+    at eval:1:1
+    at eval
+    at o.<anonymous>
+   arr.unshift(0);
+=> 5
+   arr;
+=> [ 0, 2, 3, 4, 6 ]
+   arr.reverse()
+=> [ 6, 4, 3, 2, 0 ]
+   arr.sort();
+=> [ 0, 2, 3, 4, 6 ]
+
+   var arr1 = [1,2,3];
+=> undefined
+   var arr2 = [4,5,6];
+=> undefined
+   arr1.concat(arr2);
+=> [ 1, 2, 3, 4, 5, 6 ]
+   arr1;
+=> [ 1, 2, 3 ]
+   arr2;
+=> [ 4, 5, 6 ]
+   arr3 = arr1.concat(arr2);
+=> [ 1, 2, 3, 4, 5, 6 ]
+   arr1.concat(arr2);
+=> [ 1, 2, 3, 4, 5, 6 ]
+   arr1.push(arr2);
+=> 4
+   arr1
+=> [ 1, 2, 3, [ 4, 5, 6 ] ]
+   var arr4 = [1,2,3,1,2,3]
+=> undefined
+   arr4.indexOf(2);
+=> 1
+   arr4.lastIndexOf(2);
+=> 4
+   var str = "1,2,3,4,5";
+=> undefined
+   str.split(",")
+=> [ '1', '2', '3', '4', '5' ]
+   "1-2-3-4-5".split("-");
+=> [ '1', '2', '3', '4', '5' ]
+   var arr = [1,2,3];
+=> undefined
+   arr.unshift("begin")
+=> 4
+   arr
+=> [ 'begin', 1, 2, 3 ]
+   arr.push("end");
+=> 5
+   arr
+=> [ 'begin', 1, 2, 3, 'end' ]
+      
