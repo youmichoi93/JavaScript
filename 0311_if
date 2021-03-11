@@ -1,0 +1,50 @@
+// 입력값 2050, 결과값 false
+var a = prompt("알고 싶은 년도를 입력하세요");
+console.log(isleapYear(a));
+
+function isleapYear(year){
+  if (year % 4 == 0) {
+    return true;
+  } else {
+  //else 구문을 추가하세요
+    return false;
+  } 
+
+}
+
+
+###################################################
+console.log("Menu");
+console.log("1. 아아");
+console.log("2. 라떼");
+console.log("3. 카푸치노");
+console.log("4. 티");
+
+var choice = parseInt(prompt("메뉴를 선택해 주세요."));
+#사용자 메뉴 입력창
+console.log(choice + "번 메뉴를 선택하셨습니다.");
+
+
+// if문을 switch로 변경함, 이는 더 간결하지만 break를 걸어줘야함.
+switch (choice){
+  case 1:
+  console.log("아아는 1500원 입니다.");
+  break;
+
+  case 2:
+  console.log("라떼는 1600원 입니다.");
+  break;
+
+  case 3:
+  console.log("카푸치노는 1300원 입니다.");
+  break;
+  
+  case 4:
+  console.log("티는 1100원 입니다.");
+  break;
+
+
+  default:
+  console.log("아아는 1500원 입니다.");
+  break;
+}
