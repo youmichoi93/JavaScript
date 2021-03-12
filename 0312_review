@@ -1,0 +1,20 @@
+//JS 함수
+
+function return_test(){
+  retrun;  //return 에서 나가서 실행이 안 됨.
+  console.log("실행되지 않는 코드");
+}
+
+//메세지를 던져서 메세지를 출력.
+function print(msg){
+  console.log("print function in");
+  console.log(msg);
+  console.log("prin function out");
+}
+
+
+//인수를 더한 값을 결과로 출력.
+function sum(arg1,arg2){
+  var result = arg1 + arg2;
+  return result;
+}
