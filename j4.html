@@ -1,0 +1,63 @@
+<html>
+
+
+<head>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+
+
+<body>
+    <script>
+    $(function(){
+        var baseFontSize = 14;
+
+        $(".zoomBtnZone button").on("click", zoomInOut);
+
+
+        function zoomInOut(){
+            if($(this).hasClass("zoomOut")){
+                if(baseFontSize <=8) return false;
+                baseFontSize--;
+            } else if($(this).hasClass("ZoomIn")){
+                if(baseFontSize >=20)return false;
+                baseFontSize++;
+            }else{
+              baseFontSize = 14;
+
+        }
+        $(".fontSize").text(baseFontSize+"px")
+        $("body").css({
+            fontSize:baseFontSize+"px"
+        });
+    }
+
+    $("#change_text_color").click( function() {
+		$("#wrap").css("color","red");
+	});
+	$("#init_color").click( function() {
+		$("#wrap").css("background-color","white");
+		$("#wrap").css("color","black");
+
+
+
+    });
+
+});
+  
+</script>
+
+    <p class="zoomBtnZone">
+    <button class="zoomOut">-</button>
+    <button class="origin">100%</button>
+    <button class="zoomIn">+</button>
+    </p>
+
+
+    <p class="fontSize">14px</p>
+    <div id="wrap">가나다라마바사아자차카타파하</div>
+    <button id="change_text_color">글자색 변경</button>
+    <button id="init_color">초기화</button>
+
+
+</body>
+</html>

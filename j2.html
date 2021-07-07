@@ -1,0 +1,54 @@
+<html>
+
+<head>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+
+    <script>
+        $(function() {
+            $(document).on("keydown", keyEventFnc);
+
+            function keyEventFnc(e) {
+                var direct = "";
+
+                switch (e.keyCode) {
+                    case 37:
+                        direct = "LEFT"
+                        break;
+                    case 38:
+                        direct = "TOP"
+                        break;
+                    case 39:
+                        direct = "RIGHT"
+                        break;
+                    case 40:
+                        direct = "BOTTOM"
+                        break;
+                    case 65:
+                         direct = "Apple"     
+                        break;
+                    case 68:
+                         direct = "Day" 
+                        break;
+                }
+                if (direct) $("#userid").val(direct);
+            }
+        });
+    </script>
+
+
+
+    <p>
+        <input type="text" name="userid" id="userid">
+    </p>
+
+
+
+
+</body>
+
+</html>
