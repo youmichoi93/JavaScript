@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<title>JavaScript Apply</title>
+</head>
+
+<body>
+  <h2>오늘의 날짜를 알려줘!</h2>
+  <button onclick ="printDate()">클릭하면 알려드림</button>
+    <p id = "date"></p>
+  <script>
+    function printDate(){
+      document.getElementById("date").innerHTML = Date();
+    }
+  
+  
+  </script>
+  </body>
+
+</html>
