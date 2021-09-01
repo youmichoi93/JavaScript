@@ -1,0 +1,20 @@
+const initialNumber = document.querySelector("#initialNumber");
+
+function getSubmit(event) {
+  event.preventDefault();
+  const firstNumber = document.querySelector("#firstNumber").value;
+  const secondNumber = document.querySelector("#secondNumber").value;
+  const randomNumber = Math.ceil(Math.random() * firstNumber);
+  const chosenNumber = document.querySelector("#chosen");
+  const iswinner = document.querySelector("#return");
+
+  chosenNumber.innerText = `You chose: ${secondNumber}, the machine chose: ${randomNumber}.`;
+
+  if (parseInt(secondNumber, 10) === parseInt(randomNumber, 10)) {
+    iswinner.innerText = "YOU WIN!!!";
+  } else if (parseInt(secondNumber, 10) !== parseInt(randomNumber, 10)) {
+    iswinner.innerText = "YOU LOSE";
+  }
+}
+
+initialNumber.addEventListener("submit", getSubmit);
