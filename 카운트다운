@@ -1,0 +1,26 @@
+const clockTitle = document.querySelector("h2.js-clock");
+
+function christMas() {
+  const todaydate = new Date();
+  const ddaydate = new Date(2021, 11, 25);
+  const daygap = ddaydate.getTime() - todaydate.getTime();
+  const dayleft = String(Math.ceil(daygap / (1000 * 60 * 60 * 24))).padStart(
+    2,
+    "0"
+  ); //1일
+  const hourleft = String(
+    Math.ceil((daygap % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))
+  ).padStart(2, "0");
+  const minleft = String(
+    Math.ceil((daygap % (1000 * 60 * 60)) / (1000 * 60))
+  ).padStart(2, "0");
+  const secleft = String(Math.ceil((daygap % (1000 * 60)) / 1000)).padStart(
+    2,
+    "0"
+  );
+
+  clockTitle.innerText = `${dayleft}d ${hourleft}h ${minleft}m ${secleft}s.`;
+}
+
+christMas();
+setInterval(christMas, 1000);
