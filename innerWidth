@@ -1,0 +1,19 @@
+const h1 = document.querySelector("h1");
+h1.style.color = "white";
+document.body.style.backgroundColor = "tomato";
+
+const handler = {
+  ColorChange: function () {
+    const width = window.innerWidth;
+
+    if (width > 700) {
+      document.body.style.backgroundColor = "blue";
+    } else if (width <= 700 && width > 500) {
+      document.body.style.backgroundColor = "tomato";
+    } else {
+      document.body.style.backgroundColor = "black";
+    }
+  }
+};
+
+window.addEventListener("resize", handler.ColorChange);
