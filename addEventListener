@@ -1,0 +1,28 @@
+import "./styles.css";
+const colors = ["#1abc9c", "#3498db", "#9b59b6", "#f39c12", "#e74c3c"];
+
+
+const h2 = document.querySelector("h2");
+const superEventHandler = {
+  MouseEnter: function () {
+    h2.innerText = "The mouse is here !";
+    h2.style.color = colors[0];
+  },
+  MouseLeave: function () {
+    h2.innerText = "Now it's gone.";
+    h2.style.color = colors[1];
+  },
+  Resize: function () {
+    h2.innerText = "It's resized.";
+    h2.style.color = colors[2];
+  },
+  Contextmenu: function () {
+    h2.innerText = "It's a right-click !!!";
+    h2.style.color = colors[3];
+  }
+};
+
+h2.addEventListener("mouseenter", superEventHandler.MouseEnter);
+h2.addEventListener("mouseleave", superEventHandler.MouseLeave);
+window.addEventListener("resize", superEventHandler.Resize);
+window.addEventListener("contextmenu", superEventHandler.Contextmenu);
