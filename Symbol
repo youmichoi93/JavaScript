@@ -1,0 +1,6 @@
+let testSymboll = Symbol('1');
+let testSymbol2 = Symbol('1');
+
+console.log(testSymboll, typeof testSymbol1);
+console.log(testSymboll == testSymbol2);
+console.log(testSymboll === testSymbol2);   
