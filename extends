@@ -1,0 +1,26 @@
+class Animal{
+    constructor(name){
+    this.name = name;
+      }
+      greeting(){
+        return 'Hiiiiiiiiiii';
+     }
+    }
+    
+
+    class Hobby extends Animal{
+        constructor(name,hobby){
+            super(name)
+            this.hobby = hobby;
+        }
+
+        greeting(choi){
+            return 'Hello! I am ';
+        }
+        
+    }
+    Animal.prototype.age = 10;
+    
+    const blake = new Hobby('Blake','playing the piano');
+    console.log(blake.greeting() +blake.name + ', '+blake.age + ' years old', 'and my hobby is '+ blake.hobby); 
+    
