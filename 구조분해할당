@@ -1,0 +1,6 @@
+function getData() {
+  return [1, 2, 3];
+}
+
+let [a, b, c] = getData();
+console.log(a, b, c);
