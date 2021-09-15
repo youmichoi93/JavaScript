@@ -4,3 +4,10 @@ function getData() {
 
 let [a, b, c] = getData();
 console.log(a, b, c);
+
+
+================
+
+let data = "Blake, 20, none";
+let [name, age, hobby] = data.split(",");
+console.log(name, age, hobby);
