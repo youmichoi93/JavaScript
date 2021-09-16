@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+  </head>
+  <body>
+    <h1>가나다라</h1>
+
+    <h3>마바사아</h3>
+    <ul id="hobby_course_list">
+      <li class="course" id="start">
+        <a href="https://velog.io/@dbal9357">벨로그</a>
+      </li>
+      <li class="course" id="start">
+        <a href="https://velog.io/@dbal9357"
+          >자차카타</a
+        >
+      </li>
+      <li class="course" id="begin">
+        <a href="https://velog.io/@dbal9357"
+          >파하</a
+        >
+      </li>
+      <li class="course" id="begin">
+        <a href="https://velog.io/@dbal9357"
+          >예시</a
+        >
+      </li>
+      <li class="course" id="advanced">
+        <a href="https://velog.io/@dbal9357"
+          >예시</a
+        >
+      </li>
+      <li class="course" id="advanced">
+        <a href="https://velog.io/@dbal9357"
+          >예시</a
+        >
+      </li>
+      <li class="course" id="advanced">
+        <a href=""
+          >예시</a
+        >
+      </li>
+    </ul>
+    <script>
+      const item = document.getElementById("start"); 
+      alert(item.innerText); 
+      item.innerHTML = '<a href="https://velog.io/@dbal9357">벨로그</a>';
+      
+    
+      const tags = document.getElementsByTagName("a"); 
+      alert(tags.length); 
+
+      const items = document.querySelectorAll("#start"); 
+      for (let i = 0; i < items.length; i++) {
+        alert(items[i].innerText);
+      }
+    </script>
+  </body>
+</html>
